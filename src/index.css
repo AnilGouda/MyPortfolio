@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-void text-ink font-body antialiased transition-colors duration-300;
+}
+
+html.light body {
+  @apply bg-void-light text-ink-light;
+}
+
+::selection {
+  background: #2dd4bf;
+  color: #0a0e12;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #263039;
+  border-radius: 999px;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #d2d8d8;
+}
+
+/* faint schema/grid backdrop, evokes an ER-diagram / console canvas */
+.schema-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+html.light .schema-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.focus-ring {
+  @apply outline-none ring-2 ring-teal/70 ring-offset-2 ring-offset-void;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
