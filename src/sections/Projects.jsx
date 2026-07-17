@@ -12,8 +12,8 @@ export default function Projects() {
     <section id="projects" className="mx-auto max-w-5xl px-6 py-28">
       <Reveal className="mb-10 flex flex-wrap items-end justify-between gap-6">
         <div>
-          <span className="font-mono text-xs uppercase tracking-[0.25em] text-teal">03 · Projects</span>
-          <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">Things I've built.</h2>
+          <span className="font-mono text-3xl uppercase tracking-[0.05em] text-teal">Projects:</span>
+          <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-2xl">Things I've built.</h2>
         </div>
 
         <div className="flex flex-wrap gap-2">

@@ -5,8 +5,8 @@ export default function About() {
   return (
     <section id="about" className="mx-auto max-w-5xl px-6 py-28">
       <Reveal>
-        <span className="font-mono text-xs uppercase tracking-[0.25em] text-teal">01 · About</span>
-        <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
+        <span className="font-mono text-3xl uppercase tracking-[0.05em] text-teal">About:</span>
+        <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-2xl">
           Backend-first, full-stack curious.
         </h2>
       </Reveal>

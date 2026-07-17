@@ -23,8 +23,8 @@ export default function Resume() {
     <section id="resume" className="mx-auto max-w-5xl px-6 py-28">
       <Reveal className="mb-12 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <span className="font-mono text-xs uppercase tracking-[0.25em] text-teal">02 · Resume</span>
-          <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">Where I've been.</h2>
+          <span className="font-mono text-3xl uppercase tracking-[0.05em] text-teal">Resume:</span>
+          <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-2xl">Where I've been.</h2>
         </div>
         <a
           href={profile.resumeUrl}

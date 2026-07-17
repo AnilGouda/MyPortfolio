@@ -58,8 +58,8 @@ export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-5xl px-6 py-28">
       <Reveal>
-        <span className="font-mono text-xs uppercase tracking-[0.25em] text-teal">04 · Contact</span>
-        <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">Let's build something.</h2>
+        <span className="font-mono text-3xl uppercase tracking-[0.05em] text-teal">Contact:</span>
+        <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-2xl">Let's build something.</h2>
         <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted">
           Have a backend problem worth solving, or an opening on your team? My inbox is open.
         </p>
